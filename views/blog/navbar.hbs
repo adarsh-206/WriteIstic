@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+  <nav>
+      <style scoped>
+        @import "/static/css/navbar.css";
+    </style>
+    <div class="wrapper">
+      <div class="logo"><a href="#">WriteIstic</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+  <!--   <a href="#" class="desktop-item">Dropdown Menu</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+          <ul class="drop-menu">
+            <li><a href="#">Drop menu 1</a></li>
+            <li><a href="#">Drop menu 2</a></li>
+            <li><a href="#">Drop menu 3</a></li>
+            <li><a href="#">Drop menu 4</a></li>
+          </ul>
+        </li>                                         -->
+        <li>
+          <a href="/blog" class="desktop-item">Blogs</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Blogs</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                 <img src="/static/images/menu.jpg" alt=""> 
+              </div>
+              <div class="row">
+            {{!-- <header>Design Services</header> --}}
+                <ul class="mega-links">
+                  <li><a href="#">Travel</a></li>
+                  <li><a href="#">Lifestyle</a></li>
+                  <li><a href="#">Music</a></li>
+                  <li><a href="#">Fashion</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                {{!-- <header>Email Services</header> --}}
+                <ul class="mega-links">
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Politics</a></li>
+                  <li><a href="#">Fitness</a></li>
+                  <li><a href="#">DIY</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                {{!-- <header>Security services</header> --}}
+                <ul class="mega-links">
+                  <li><a href="#">Sports</a></li>
+                  <li><a href="#">Bussiness</a></li>
+                  <li><a href="#">Movies</a></li>
+                  <li><a href="#">Gaming</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#" onclick="document.getElementById('subscribe').style.display='block'">Write Here</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+  {{!-- <div class="body-text">
+    <div class="title">Responsive Dropdown and Mega Menu</div>
+    <div class="sub-title">using only HTML & CSS</div>
+  </div> --}}
+
