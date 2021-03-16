@@ -1,0 +1,28 @@
+{
+  "name": "crud-operation-in-nodejs-with-mongodb",
+  "version": "1.0.0",
+  "description": "Build a CRUD Operations with Node JS, Express, and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crud",
+    "operations"
+  ],
+  "author": "TechArise Team",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "hbs": "^4.1.1",
+    "i": "^0.3.6",
+    "mongoose": "^5.9.2",
+    "moongoose": "0.0.5",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "handlebars": "^4.5.0"
+  }
+}
