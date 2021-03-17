@@ -4,6 +4,7 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const bodyparser = require('body-parser');
 const hbs = require('hbs');
+const port = Process.env.PORT || 3000 ;
 
 const blogController = require('./controllers/blogController');
 const partials_path = path.join(__dirname, "/views/blog");
@@ -22,8 +23,8 @@ app.set('views', path.join(__dirname, '/views/'));
 app.set('view engine', 'hbs');
 hbs.registerPartials(partials_path);
 
-app.listen(3000, () => {
-    console.log('SERVER is listening on PORT 3000');
+app.listen(port, () => {
+    console.log("server listening to port "+port);
 });
 
 app.get("/", (req, res) => {
