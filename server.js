@@ -4,7 +4,7 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const bodyparser = require('body-parser');
 const hbs = require('hbs');
-const port = Process.env.PORT || 3000 ;
+const port = process.env.PORT || 3000 ;
 
 const blogController = require('./controllers/blogController');
 const partials_path = path.join(__dirname, "/views/blog");
