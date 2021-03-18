@@ -1,14 +1,9 @@
-const mongoose = require('mongoose');
-/* Map Global promises */
-mongoose.Promise = global.Promise;
 
-mongoose.connect(process.env.MONGODB_URI || process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://localhost:27017/Blog_DB', { useNewUrlParser: true }, (err) => {
-    if (!err) {
-        console.log('Connection created.')
-    }
-    else {
-        console.log('Connection failed: : ' + err)
-    }
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://writeistic:<password>@cluster0.7v7bx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
 });
-
-require('./blog.model');
