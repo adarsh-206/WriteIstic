@@ -1,9 +1,13 @@
-
-const MongoClient = require('mongodb').MongoClient;
+const mongoose = require('mongoose');
 const uri = "mongodb+srv://writeistic:<password>@cluster0.7v7bx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
+
+mongoose.connect(url, { useNewUrlParser: true }, (err) => {
+    if (!err) {
+        console.log('Connection created.')
+    }
+    else {
+        console.log('Connection failed: : ' + err)
+    }
 });
+
+require('./blog.model');
