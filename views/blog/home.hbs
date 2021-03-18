@@ -296,7 +296,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
       <h2 class="w3-wide">Share Your Thoughts With Us</h2>
       <p>The first step in blogging is not writing them but reading them.</p>
-    {{!-- <form action="/blog" method="POST">
+     <form action="/blog" method="POST">
       <p><input class="w3-input w3-border" name="full_name" type="text" placeholder="Author's Name" value="{{blog.full_name}}"></p>
       <p><input class="w3-input w3-border" name="post_title" type="text" placeholder="Post Title" value="{{blog.post_title}}"></p>
       <p><input class="w3-input w3-border" name="post_tags" type="text" placeholder="Post Tags" value="{{blog.post_tags}}"></p>
@@ -316,24 +316,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         });
      </script>
       <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Submit</button>
-    </form> --}}
-
-      <form action="/blog" method="POST" autocomplete="off">
-           <p><input type="hidden" name="_id" value="{{blog._id}}"></p>
-           <p><input type="text" class="w3-input w3-border" name="full_name" placeholder="Full Name" value="{{blog.full_name}}"></p>   
-          <p><input type="text" class="w3-input w3-border" name="post_title" placeholder="Post Title" value="{{blog.post_title}}"></p>     
-          <p><input class="w3-input w3-border" name="post_tags" placeholder="Post Tags" value="{{blog.post_tags}}"></p> 
-          <p><input type="text" class="w3-input w3-border" name="post_category" placeholder="Post Category" value="{{blog.post_category}}"></p> 
-          <p><textarea type="text" class="w3-input w3-border " name="blog_post" id="post" placeholder="Blog Post" value="{{blog.blog_post}}"></textarea></p>             
-          <script>
-            ClassicEditor
-              .create( document.querySelector( '#post' ) )
-               .catch( error => {
-                 console.error( error );
-               } );
-         </script>
-          <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Submit</button>
-     </form>
+    </form>
    </div>
   </div>
 </div>
