@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://Blog_DB:Ada2001r$h@writeistic.7v7bx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
+mongoose.connect('mongodb+srv://Blog_DB:Ada2001r$h@writeistic.7v7bx.mongodb.net/Blog_DB?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
     if (!err) {
         console.log('Connection created.')
     }
